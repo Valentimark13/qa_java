@@ -24,12 +24,12 @@ class CatTest {
     }
 
     @Test
-    void getSound_ShouldReturnMeow() {
+    void getSoundShouldReturnMeow() {
         assertEquals("Мяу", cat.getSound());
     }
 
     @Test
-    void getFood_ShouldReturnFoodList() throws Exception {
+    void getFoodShouldReturnFoodList() throws Exception {
         List<String> expectedFood = Arrays.asList("Мясо", "Рыба");
         when(predator.eatMeat()).thenReturn(expectedFood);
 

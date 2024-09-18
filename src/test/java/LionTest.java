@@ -27,17 +27,17 @@ class LionTest {
     }
 
     @Test
-    void doesHaveMane_MaleLion_ShouldHaveMane() {
+    void doesHaveManeMaleLionShouldHaveMane() {
         assertTrue(lionMale.doesHaveMane());
     }
 
     @Test
-    void doesHaveMane_FemaleLion_ShouldNotHaveMane() {
+    void doesHaveManeFemaleLionShouldNotHaveMane() {
         assertFalse(lionFemale.doesHaveMane());
     }
 
     @Test
-    void getFood_ShouldReturnFoodList() throws Exception {
+    void getFoodShouldReturnFoodList() throws Exception {
         List<String> expectedFood = Arrays.asList("Мясо", "Рыба");
         when(feline.getFood("Хищник")).thenReturn(expectedFood);
 
@@ -47,7 +47,7 @@ class LionTest {
     }
 
     @Test
-    void getKittens_ShouldReturnKittenCount() {
+    void getKittensShouldReturnKittenCount() {
         when(feline.getKittens()).thenReturn(2);
         assertEquals(2, lionMale.getKittens());
     }

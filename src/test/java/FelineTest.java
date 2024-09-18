@@ -13,22 +13,22 @@ class FelineTest {
     Feline feline = new Feline();
 
     @Test
-    void getFamily_ShouldReturnFelineFamily() {
+    void getFamilyShouldReturnFelineFamily() {
         assertEquals("Кошачьи", feline.getFamily());
     }
 
     @Test
-    void getKittens_ShouldReturnOneKittenByDefault() {
+    void getKittensShouldReturnOneKittenByDefault() {
         assertEquals(1, feline.getKittens());
     }
 
     @Test
-    void getKittens_WithArgument_ShouldReturnGivenCount() {
+    void getKittensWithArgumentShouldReturnGivenCount() {
         assertEquals(3, feline.getKittens(3));
     }
 
     @Test
-    void eatMeat_ShouldReturnFoodListForPredator() throws Exception {
+    void eatMeatShouldReturnFoodListForPredator() throws Exception {
         // Подготовим мок для метода getFood
         List<String> expectedFood = Arrays.asList("Животные", "Птицы", "Рыба");
         // Мокаем поведение метода getFood

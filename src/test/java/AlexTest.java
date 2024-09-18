@@ -20,18 +20,18 @@ class AlexTest {
     }
 
     @Test
-    void getKittens_ShouldReturnZero() {
+    void getKittensShouldReturnZero() {
         assertEquals(0, alex.getKittens());  // Проверяем, что у Алекса нет львят
     }
 
     @Test
-    void getFriends_ShouldReturnListOfFriends() {
+    void getFriendsShouldReturnListOfFriends() {
         List<String> expectedFriends = List.of("Марти", "Глория", "Мелман");
         assertEquals(expectedFriends, alex.getFriends());  // Проверяем список друзей
     }
 
     @Test
-    void getPlaceOfLiving_ShouldReturnNewYorkZoo() {
+    void getPlaceOfLivingShouldReturnNewYorkZoo() {
         assertEquals("Нью-Йоркский зоопарк", alex.getPlaceOfLiving());  // Проверяем место жительства
     }
 
